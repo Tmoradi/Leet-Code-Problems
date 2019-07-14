@@ -3,7 +3,10 @@ def happy_number(number):
     number_copy = str(number)
     val = None
     d = {f'char_{i}': int(char) for i,char in enumerate(number_copy)}
+'''
+NEED TO DO 
 
+'''
     # print(str(number))
     while val != 1:
         val = int(sum([x**2 for x in d.values()]))
