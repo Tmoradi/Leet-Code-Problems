@@ -1,0 +1,5 @@
+def nextGreaterElement():
+    
+    
+    
+    return None 
