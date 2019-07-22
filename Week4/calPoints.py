@@ -26,17 +26,17 @@ def calPoints(ops):
     #             stack.append(temp)
     #             stack.append(temp+temp_2)
     # return out 
-     stack = []
+    stack = []
 
-        for char in ops:
-            if char not in '+DC':
-                stack.append(int(char))
-            elif char == 'D':
-                stack.append(2 * stack[-1])
-            elif char == '+':
-                stack.append(stack[-1]+stack[-2])
-            else:
-                stack.pop()
+    for char in ops:
+        if char not in '+DC':
+            stack.append(int(char))
+        elif char == 'D':
+            stack.append(2 * stack[-1])
+        elif char == '+':
+            stack.append(stack[-1]+stack[-2])
+        else:
+            stack.pop()
         return sum(stack)
 
 

@@ -5,5 +5,5 @@
 #         self.next = None
 
 class Solution:
-    def reverseKGroup(self, head:, k):
+    def reverseKGroup(self, head, k):
         return None 
