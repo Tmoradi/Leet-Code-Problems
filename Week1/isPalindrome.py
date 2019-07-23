@@ -1,0 +1,17 @@
+def isPalindrome(self, s: str) -> bool:
+        # remove non alphanumeric characters 
+        l,r = 0,len(s) - 1
+        while l < r:
+            if not s[l].isalpha() and not s[l].isdigit():
+                l += 1
+                continue
+            if not s[r].isalpha() and not s[r].isdigit():
+                r -= 1
+                continue
+            
+            if s[l].lower() != s[r].lower():
+                return False
+            
+            l += 1
+            r -= 1
+        return True
