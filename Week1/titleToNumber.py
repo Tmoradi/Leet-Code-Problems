@@ -9,7 +9,7 @@ def titleToNumber(self, s):
         letter_to_num = {letters[num - 1]:num for num in nums}
         res = 0
         k = 1
-        for i in xrange(len(s) - 1):
+        for i in range(len(s) - 1):
             res += k * 26
             k *= 26
         
